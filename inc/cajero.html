@@ -1,0 +1,240 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/buttons.css">
+	<link rel="stylesheet" href="../css/estilo.css">
+	<script src="../js/jquery-1.11.2.js"></script>
+	<script src="../js/jquery-ui.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/draggabilly.pkgd.min.js"></script>
+	<title>Cajero | Parking System</title>
+</head>
+<body id="cuerpo-cajero" class="bg">
+	<div id="fadebox"></div>	
+	<header>
+		<div id="navbar_parking" class="navbar">
+			<a class="navbar-brand" href="../inc/panel.html" ><img src="../img/acer_logo.png" alt=""></a>		
+			<a id="boton-back" style="" href="../inc/panel.html" target=""> Volver <span class="glyphicon glyphicon-arrow-left "></span></a>		
+		</div>
+	</header>
+			<div class="clearfix"></div>
+		<div class="container">
+			<div class="row" >	
+						
+				<div id="botones_caja" class="col-xs-12 col-lg-10">				
+							
+						<div id="apertura" class="boton_caja btn btn-default btn-md">Apertura</div>
+						<div class="boton_caja btn btn-default  btn-md">Arqueo</div>
+						<div class="boton_caja btn btn-default  btn-md">Ingreso</div>
+						<div class="boton_caja btn btn-default  btn-md">Cierre</div>
+					</div>
+					<form action="">
+					<div class="search hidden-xs col-sm-5 col-sm-offset-7 col-md-4 col-md-offset-8 col-lg-4 col-lg-offset-8 ">
+					<div class="input-group ">
+		    		<div class="input-group-addon icono_form"><span class="glyphicon glyphicon-search" </span></div>
+		      		<input type="text" class="form-control" id="inputEmail3" placeholder="Buscar">
+		    			</div>
+					</div>
+					</form>
+		    	</div>
+				</div>
+				</div>
+				
+		  </div>
+		<div class="clearfix"></div>	
+		
+			<div id="panel_cajero" class="row" style="margin-right:5px;margin-left:4px">
+				<form id="form_cajero" action="" class="form-horizontal col-xs-12 col-lg-6 ">			
+					<div id="inputs-text-cajero" class="col-xs-12 col-sm-10 col-sm-offset-2 col-md-10 col-md-offset-2 col-lg-offset-1">
+						<input type="text" placeholder="ABC" onfocus="this.placeholder=''" onblur="this.placeholder='ABC'" class="col-xs-6 col-sm-5 col-md-5 col-lg-5" id="placa_1">
+						<input type="text" placeholder="123" onfocus="this.placeholder=''" onblur="this.placeholder='123'" class="col-xs-6 col-sm-5 col-md-5 col-lg-5" id="placa_2">
+					</div>
+
+					<div class="clearfix"></div>
+					<div id="combobox" class="btn-group col-xs-10 col-xs-offset-1 col-sm-6 col-sm-offset-3 col-md-6 col-md-offset-3 col-lg-7 col-lg-offset-2">
+						<select  name="" id="option" class="form-control">
+							<option value='' disabled selected style='display:none;'>Tipo Vehículo</option>
+							<option value="">Carro</option>
+							<option value="">Moto</option>
+							<option value="">Mensualidad</option>
+
+						</select>
+					
+					</div>	
+					<div class="clearfix"></div>
+					<div id="botones-factura" class="col-xs-12 col-sm-12 col-sm-offset-2 col-md-9 col-md-offset-3 col-lg-12">					
+					<button type="button" id="incluir" class="col-xs-6 col-sm-4 col-sm-offset-2 col-lg-4 button button-action ">Incluir</button>
+					<button type="button" id="retirar" class="col-xs-6 col-sm-4 col-sm-offset-4 col-lg-4 button button-caution ">Retirar</button>		
+					</div>
+					<!-- <div class="clearfix"></div> -->
+					<div id="ver-carros" class="col-xs-12 hidden-sm hidden-md col-lg-7 col-lg-offset-2">
+						<button id="boton-ver-carros" class="col-xs-12 hidden-lg button button-highlight button-large">Ver Carros</button>
+					</div>
+				</form>
+				<div class="clearfix">
+					<div class="row">
+						<div id="mapa-desktop" class="hidden-xs hidden-sm hidden-md col-lg-6">
+							
+						</div>
+					</div>
+				</div>
+				<div class="clearfix"></div>
+					<div class="row" style="margin-right:5px;margin-left:10px">
+						<div class="col-sm-12 col-md-12  hidden-lg">
+						<div style="background-color:white" id="tirilla" class=" hidden-xs hidden-sm hidden-md ">
+							<div id="title-tirilla" class="col-xs-12"><span>Tirilla</span></div>
+							<h4>Tirilla de Ingreso</h4>
+							<p>Edificio:</p>
+							<p>Parqueadero:</p>
+							<p>Fecha:</p>
+							<p>Hra de ingreso:</p>
+							<p>Nro Tirilla:</p>
+							<p>Valor fracción:</p>
+							<h3>Placa</h3>
+							<h1>XLM 332</h2>
+							<p id="texto-tirilla" class="text-justify col-xs-11 col-sm-10">La empresa no se responsabiliza por daño, pérdida o deterioro ocurridos por motín, incendios, 
+							terremotos, atracos y demás situaciones que se presenten y sean ajenas a nuestro servicio.</p>	
+						<div id="botones-tirilla" class="col-xs-11">
+							<button id="button-imprimir" class="button button-primary button-square button-small ">
+								<span class="glyphicon glyphicon-print" aria-hidden="true"></span></button>
+							<button id="button-cancelar" class="button button-caution button-small col-xs-1">
+								<span class="glyphicon glyphicon-remove" aria-hidden="true"></span> </button>
+						</div>
+				</div>
+					<div style="background-color:white" id="factura" class="hidden-xs hidden-sm hidden-md hidden-lg">
+						<div id="title-tirilla" class="col-xs-12"><span>Factura</span></div>
+						<h4>Factura</h4>
+						<p>Edificio:</p>
+						<p>Dirección:</p>
+						<p>Teléfono:</p>						
+						<p>Resolución DIAN:</p>
+						<h3>Placa</h3>
+						<h1>XLM 332</h2>
+						<p>Fecha ingreso:</p>
+						<p>Fecha salida:</p>
+						<p>Hra ingreso:</p>
+						<p>Hra salida</p>
+						<strong>Duración parqueo: </strong>
+						<p>Cajero:</p>
+						<p>Paga:</p>
+						<p>Subtotal:</p>
+						<p>Iva:</p>
+						<strong>Total: </strong>
+
+						<div id="botones-tirilla" class="col-xs-11">
+							<button id="button-imprimir-factura" class="button button-primary button-square button-small ">
+								<span class="glyphicon glyphicon-print" aria-hidden="true"></span></button>
+
+						</div>
+				</div>
+						</div>
+					
+					</div>
+				
+				<div class="row" style="margin-right:5px">
+					<div style="margin-left:13px" id="mapa" class=" hidden-xs col-sm-12 col-sm-offset-0 hidden-lg">
+						
+					</div>
+				</div>
+			</div>
+	<div id="entregables_desktop" class="hidden-xs hidden-sm hidden-md">
+			<div id="drag-me "class="tirilla_desktop draggable">
+				<div class="close_tirilla">Mi Tirilla
+				<a style="text-decoration:none;color:red;" href="#" class="icon-close close-icon-tirilla">CANCELAR</a></div>
+				<h3>Tirilla de Ingreso</h3>
+				<p>Edificio: </p>
+				<p>Parqueadero: </p>
+				<p>Fecha: </p>
+				<p>Hora de ingreso: </p>
+				<p>No Tirilla: </p>
+				<p>Valor Fracción: </p>
+				<h2>Placa</h2>
+				<h1>XLM 322</h1>
+				<p class="texto_bottom text-lowercase">LA EMPRESA NO SE RESPONSABILIZA POR DAÑO,  PÉRDIDA O DETERIORO OCURRIDOS POR MOTÍN, INCENDIOS, TERREMOTOS, ATRACOS Y DEMÁS SITUACIONES QUE SE PRESENTEN Y QUE SEAN AJENAS A NUESTRO SERVICIO </p>
+				<p style="text-align: center; padding-top: 3em">Sistema Parquing System </p>
+				<p style="text-align: center">Versatia.Net</p>
+				<a class="glyphicon glyphicon-print imprimir-icon"></a>
+			</div>
+
+		<div id="drag-me "class="factura_desktop draggable">
+			<div class="close_factura">Mi Factura
+				<a style="text-decoration:none;color:red;" href="#" class="icon-close close-icon-factura">CANCELAR</a></div>
+				<h4>Factura</h4>
+				<p>Edificio: </p>
+				<p>Dirección: </p>
+				<p>Teléfono: </p>
+				<p>Resolución DIAN:  </p>
+				<p>Fecha Resolución DIAN:</p>
+				<h2 style="margin-top: 0.5em">Placa</h2>
+				<h1>XLM 322</h1>
+				<p>Fecha Ingreso: </p>
+				<p>Fecha Salida: </p>
+				<p>Hora Ingreso: </p>
+				<p>Hora Salida: </p>
+				<h4 style="text-align: left; padding-left: 1em">Duración Parqueo:</h4>
+				<p>Cajero: </p>
+				<p>Paga: </p>
+				<p>Subtotal: </p>
+				<p>Iva: </p>
+				<p>TOTAL: </p>			
+				<p style="text-align: center; padding-top: 2em">Versatia.Net</p>
+				<a class="glyphicon glyphicon-print imprimir-icon"></a>
+		</div>
+	</div>
+		</div>
+
+		</div>
+		
+
+
+	<footer style="margin-top:60px">
+		<nav  id="navbar_footer" class="navbar navbar-default navbar-fixed-bottom">
+			<div class="container-fluid">			
+				<a style="float:right;color:white" href="http://versatia.net" class="navbar-brand" target="_blank"><span class="helper-block ">Versatia.net</span></a>								
+			</div>
+		</nav>	
+	</footer>
+ <script>
+
+$(function() {
+    $( ".draggable" ).draggable({ containment: "body", scroll: false, });    
+  // $('.tirilla').addClass('animated rubberBand')
+  });
+$( document ).ready(function() {
+  
+ $("#incluir").click(function(){
+    	$(".tirilla_desktop").css("display", "block")
+    	$("#fadebox").css("display", "block")
+    	$("#tirilla").removeClass('hidden-xs hidden-sm hidden-md')
+    	$("#tirilla").addClass('col-xs-10 col-xs-offset-1 col-sm-5 ')
+    });
+    $(".close-icon-tirilla").click(function(){
+    	$(".tirilla_desktop").css("display", "none")
+    	$("#fadebox").css("display", "none")
+    });
+    $("#retirar").click(function(){
+    	$(".factura_desktop").css("display", "block")
+    	$("#fadebox").css("display", "block")
+    	$("#factura").removeClass('hidden-xs hidden-sm hidden-md')
+    	$("#factura").addClass('col-xs-10 col-xs-offset-1 col-sm-5 ')
+    });
+    $(".close-icon-factura").click(function(){
+    	$(".factura_desktop").css("display", "none")
+    	$("#fadebox").css("display", "none")
+    });
+ 	$("#button-cancelar").click(function(){
+ 		$("#tirilla").removeClass('col-xs-10 col-xs-offset-1 col-sm-5 ')
+ 		$("#tirilla").addClass('hidden-xs hidden-sm hidden-md');
+ 	});
+ 	$("#button-imprimir-factura").click(function(){
+ 		$("#factura").removeClass('col-xs-10 col-xs-offset-1 col-sm-5 ')
+ 		$("#factura").addClass('hidden-xs hidden-sm hidden-md');
+ 	});
+
+});
+  </script>
+ 
+</body>
+</html>

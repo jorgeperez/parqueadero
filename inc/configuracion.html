@@ -1,0 +1,387 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/buttons.css">
+	<link rel="stylesheet" href="../css/estilo.css">
+	<link rel="stylesheet" href="../css/animate.css">
+	<script src="../js/jquery-1.11.2.js"></script>
+	<script src="../js/jquery-ui.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<title>Configuración| Parking System</title>
+</head>
+<body id="cuerpo-configuracion" class="bg">
+	<header>
+		<div id="navbar_parking" class="navbar">
+		<a class="navbar-brand" href="../inc/panel.html"><img src="../img/acer_logo.png" alt=""></a>
+		<a id="boton-back" style="" href="../inc/panel.html" target=""> Volver <span class="glyphicon glyphicon-arrow-left "></span></a>	
+		</div>
+	</header>
+
+	<div class="container">
+		<div style="margin-bottom: 20px" id="botones-setup" class="btn-group btn-group-justified">
+				
+			<div class="btn-group ">				
+				<button id="btn1-setup" class="btn button button-highlight button-large"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> <span class="hidden-xs">Tarifas</span></button>
+			</div>
+			<div class="btn-group ">				
+				<button id="btn2-setup" class="btn button button-highlight button-large"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span> <span class="hidden-xs">Mensualidades</span></button>
+			</div>
+			<div class="btn-group ">				
+				<button id="btn3-setup" class="btn button button-highlight button-large"><span class="glyphicon glyphicon-hdd" aria-hidden="true"></span> <span class="hidden-xs">Backups</span></button>
+			</div>
+			<div class="btn-group ">				
+				<button id="btn4-setup" class="btn button button-highlight button-large"><span class="glyphicon glyphicon-print" aria-hidden="true"></span> <span class="hidden-xs">Impresión</span></button>
+			</div>		
+		</div>
+		<div class="clearfix"></div>
+		<div class="row">
+			<div class="setup-tarifas">
+				<table id="tabla-tarifas" class="table table-bordered  animated bounceInDown hidden-xs hidden-sm hidden-md hidden-lg">
+					<thead>
+						<tr>
+							<th>Nombre Tarifa</th>
+							<th>Valor Fracción</th>
+							<th>Opciones</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Carro</td>
+							<td>500</td>
+							<td style="text-align:center;width:90px">
+								<div class="dropdown">
+									<button class="btn btn-default dropdown-toggle" type="button" id="dropdownmenu1" data-toggle="dropdown" aria-extended="false">Opciones <span class="caret"></span></button>
+										<ul style="padding:0" class="dropdown-menu" role="menu" aria-labelledby="dropdownmenu1">					
+											<li role="presentation"><a role="item" href="#">Editar</a></li>
+											<li role="presentation"><a role="item" href="#">Inhabilitar</a></li>
+											<li role="presentation"><a role="item" href="#">Eliminar</a></li>
+										</ul>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>Moto</td>
+							<td>700</td>
+							<td style="text-align:center;width:90px">
+								<div class="dropdown">
+									<button class="btn btn-default dropdown-toggle" type="button" id="dropdownmenu1" data-toggle="dropdown" aria-extended="false">Opciones <span class="caret"></span></button>
+										<ul style="padding:0" class="dropdown-menu" role="menu" aria-labelledby="dropdownmenu1">					
+											<li role="presentation"><a role="item" href="#">Editar</a></li>
+											<li role="presentation"><a role="item" href="#">Inhabilitar</a></li>
+											<li role="presentation"><a role="item" href="#">Eliminar</a></li>
+										</ul>
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>Mensualidad</td>
+							<td>52000</td>
+							<td style="text-align:center;width:90px">
+								<div class="dropdown">
+									<button class="btn btn-default dropdown-toggle" type="button" id="dropdownmenu1" data-toggle="dropdown" aria-extended="false">Opciones <span class="caret"></span></button>
+										<ul style="padding:0" class="dropdown-menu" role="menu" aria-labelledby="dropdownmenu1">					
+											<li role="presentation"><a role="item" href="#">Editar</a></li>
+											<li role="presentation"><a role="item" href="#">Inhabilitar</a></li>
+											<li role="presentation"><a role="item" href="#">Eliminar</a></li>
+										</ul>
+								</div>
+							</td>
+						</tr>
+					
+					</tbody>
+				</table>
+			</div>
+				<div class="clearfix"></div>
+				<!-- col-xs-12 col-sm-4 col-md-3 col-lg-2 -->
+					<button style="" id="boton-agregar-tarifa" class="button button-caution animated bounceInDown hidden-xs hidden-sm hidden-md hidden-lg">Nueva Tarifa</button>
+				</div>
+				<div class="clearfix"></div>
+				<div class="row ">
+						<form style="margin-top:0" id="form-agregar-tarifa" action="" class="form-horizontal hidden-xs hidden-sm hidden-md hidden-lg ">
+							<div class="form-group col-lg-9 ">
+								<label for="nombre-usuario" class="control-label col-md-2">Nombre:</label>
+								<div class="col-md-10">
+									<input type="text" class="form-control" id="nombre-usuario">
+								</div>
+							</div>
+							<div class="form-group col-lg-9 ">	
+									<label for="contraseña-usuario" class="control-label col-md-2 disabled">Valor:</label>
+									<div class="col-md-10">
+										<input type="text" class="form-control" id="contraseña-usuario">
+									</div>
+								</div>
+							<div class="clearfix"></div>		
+							<button style="" id="boton-form-agregar-tarifa" class="button button-caution col-xs-4 col-sm-6 col-md-4">Enviar</button>
+						</form>
+					</div>
+					<!-- <div class="clearfix"></div> -->
+				<div class="row">
+				<div class="setup-mensualidades">
+					<table id="tabla-mensualidades" class="table table-bordered  hidden-xs hidden-sm hidden-md hidden-lg animated bounceInDown ">
+						<thead>
+							<tr>
+								<th>Cliente</th>
+								<th>Cédula</th>		
+								<th>Tipo Mensualidad</th>		
+								<th>Opciones</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Jorge Pérez</td>
+								<td>1098689056</td>
+								<td>Mensualidad Moto</td>
+								<td style="text-align:center;width:90px">
+									<div class="dropdown">
+										<button class="btn btn-default dropdown-toggle" type="button" id="dropdownmenu1" data-toggle="dropdown" aria-extended="false">Opciones <span class="caret"></span></button>
+											<ul style="padding:0" class="dropdown-menu" role="menu" aria-labelledby="dropdownmenu1">					
+												<li role="presentation"><a role="item" href="#">Editar</a></li>
+												<li role="presentation"><a role="item" href="#">Inhabilitar</a></li>
+												<li role="presentation"><a role="item" href="#">Eliminar</a></li>
+											</ul>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Jorge Pérez</td>
+								<td>1098689056</td>
+								<td>Mensualidad Moto</td>
+								<td style="text-align:center;width:90px">
+									<div class="dropdown">
+										<button class="btn btn-default dropdown-toggle" type="button" id="dropdownmenu1" data-toggle="dropdown" aria-extended="false">Opciones <span class="caret"></span></button>
+											<ul style="padding:0" class="dropdown-menu" role="menu" aria-labelledby="dropdownmenu1">					
+												<li role="presentation"><a role="item" href="#">Editar</a></li>
+												<li role="presentation"><a role="item" href="#">Inhabilitar</a></li>
+												<li role="presentation"><a role="item" href="#">Eliminar</a></li>
+											</ul>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td>Jorge Pérez</td>
+								<td>1098689056</td>
+								<td>Mensualidad Moto</td>
+								<td style="text-align:center;width:90px">
+									<div class="dropdown">
+										<button class="btn btn-default dropdown-toggle" type="button" id="dropdownmenu1" data-toggle="dropdown" aria-extended="false">Opciones <span class="caret"></span></button>
+											<ul style="padding:0" class="dropdown-menu" role="menu" aria-labelledby="dropdownmenu1">					
+												<li role="presentation"><a role="item" href="#">Editar</a></li>
+												<li role="presentation"><a role="item" href="#">Inhabilitar</a></li>
+												<li role="presentation"><a role="item" href="#">Eliminar</a></li>
+											</ul>
+									</div>
+								</td>
+							</tr>
+						
+						</tbody>
+					</table>
+				<div class="clearfix"></div>
+				<!-- col-xs-12 col-sm-4 col-md-3 col-lg-2 -->
+					<button style="" id="boton-agregar-mensualidad" class="button button-caution hidden-xs hidden-sm hidden-md hidden-lg animated bounceInDown">Nueva Mensualidad</button>
+				</div>
+				</div>
+				<div class="row">
+						<form style="margin-top:0" id="form-agregar-mensualidad" action="" class="form-horizontal hidden-xs hidden-sm hidden-md hidden-lg">
+
+							<div class="form-group col-lg-9 ">
+								<label for="nombre-usuario" class="control-label col-md-2">Cliente:</label>
+								<div class="col-md-10">
+									<input type="text" class="form-control" id="nombre-usuario">
+								</div>
+							</div>
+							<div class="form-group col-lg-9 ">	
+									<label for="contraseña-usuario" class="control-label col-md-2 ">Cédula:</label>
+									<div class="col-md-10">
+										<input type="text" class="form-control" id="contraseña-usuario">
+									</div>
+							</div>
+							<div class="form-group col-lg-9">				
+								<select name="" id="option" class="form-control col-lg-9">
+									<option value='' disabled selected style='display:none;'>Tipo</option>
+									<option value="">Mensualidad Moto</option>
+									<option value="">Mensualidad Carro</option>
+									<option value="">Mensualidad Full</option>
+								</select>
+							</div>
+							<!-- <div class="clearfix"></div>		 -->
+							<button style="" id="boton-form-agregar-mensualidad" class="button button-caution col-xs-4 col-sm-6 col-md-4">Crear</button>
+						</form>
+				</div>
+				<div class="row">
+					<div class="setup-backup">
+						<table id="tabla-backup" class="table table-bordered  hidden-xs hidden-sm hidden-md hidden-lg animated bounceInDown ">
+							<thead>
+								<tr>
+									<th>Fecha Backup </th>
+									<th>Tipo Backup</th>
+									<th>Opciones</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>06 de Julio del 2013</td>
+									<td>Completo</td>
+									<td style="text-align:center;width:90px">
+										<div class="dropdown">
+											<button class="btn btn-default dropdown-toggle" type="button" id="dropdownmenu1" data-toggle="dropdown" aria-extended="false">Opciones <span class="caret"></span></button>
+												<ul style="padding:0" class="dropdown-menu" role="menu" aria-labelledby="dropdownmenu1">					
+													<li role="presentation"><a role="item" href="#">Inhabilitar</a></li>
+													<li role="presentation"><a role="item" href="#">Eliminar</a></li>
+													<li role="presentation"><a role="item" href="#">Descargar</a></li>
+												</ul>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>12 de agosto del 2013</td>
+									<td>Base de datos</td>
+									<td style="text-align:center;width:90px">
+										<div class="dropdown">
+											<button class="btn btn-default dropdown-toggle" type="button" id="dropdownmenu1" data-toggle="dropdown" aria-extended="false">Opciones <span class="caret"></span></button>
+												<ul style="padding:0" class="dropdown-menu" role="menu" aria-labelledby="dropdownmenu1">					
+													<li role="presentation"><a role="item" href="#">Inhabilitar</a></li>
+													<li role="presentation"><a role="item" href="#">Eliminar</a></li>
+													<li role="presentation"><a role="item" href="#">Descargar</a></li>
+												</ul>
+										</div>
+									</td>
+								</tr>
+								<tr>
+									<td>25 de septiembre del 2013</td>
+									<td>Sitio</td>
+									<td style="text-align:center;width:90px">
+										<div class="dropdown">
+											<button class="btn btn-default dropdown-toggle" type="button" id="dropdownmenu1" data-toggle="dropdown" aria-extended="false">Opciones <span class="caret"></span></button>
+												<ul style="padding:0" class="dropdown-menu" role="menu" aria-labelledby="dropdownmenu1">					
+													<li role="presentation"><a role="item" href="#">Inhabilitar</a></li>
+													<li role="presentation"><a role="item" href="#">Eliminar</a></li>
+													<li role="presentation"><a role="item" href="#">Descargar</a></li>
+												</ul>
+											</div>
+										</td>
+									</tr>							
+							</tbody>
+						</table>
+					</div>
+					<div class="clearfix"></div>
+				<!-- col-xs-12 col-sm-4 col-md-3 col-lg-2 -->
+					<button style="" id="boton-agregar-backup" class="button button-caution hidden-xs hidden-sm hidden-md hidden-lg animated bounceInDown">Crear Backup</button>
+				</div>
+				<div class="row">
+					<form style="margin-top:0" id="form-agregar-backup" action="" class="form-horizontal hidden-xs hidden-sm hidden-md hidden-lg">
+
+							<div class="form-group col-lg-9 ">
+								<label for="nombre-usuario" class="control-label col-md-2">Fecha:</label>
+								<div class="col-md-10">
+									<input type="text" class="form-control" id="nombre-usuario">
+								</div>
+							</div>
+							
+							<div class="form-group col-lg-9">				
+								<select name="" id="option" class="form-control col-lg-9">
+									<option value='' disabled selected style='display:none;'>Tipo</option>
+									<option value="">Backup Sitio</option>
+									<option value="">Backup Base de Datos</option>
+									<option value="">Backup Completo</option>
+								</select>
+							</div>
+							<!-- <div class="clearfix"></div>		 -->
+							<button style="" id="boton-form-agregar-backup" class="button button-caution col-xs-4 col-sm-6 col-md-4">Crear</button>
+					</form>
+				</div>
+							<div class="row">
+					<form style="margin-top:0" id="form-impresion" action="" class="form-horizontal hidden-xs hidden-sm hidden-md hidden-lg">
+
+							<div class="form-group col-lg-9 ">
+								<label for="nombre-usuario" class="control-label col-md-2">Logo:</label>
+								<div class="col-md-10">
+									<input type="file" class="form-control" id="nombre-usuario">
+								</div>
+							</div>
+							
+							<div class="form-group col-lg-9">				
+								<select name="" id="option" class="form-control col-lg-9">
+									<option value='' disabled selected style='display:none;'>Tipo de letra</option>
+									<option value="">Arial</option>
+									<option value="">Times new roman</option>
+									<option value="">Comic sans</option>
+								</select>
+							</div>
+							<div class="form-group col-lg-9 ">
+								<label for="nombre-usuario" class="control-label col-md-2">Texto Tirilla:</label>
+								<div class="col-md-10">
+									<textarea class="form-control"name="" id="" cols="40" rows="5">La empresa no se responsabiliza por daño, pérdida o deterioro ocurridos por motín, incendios, terremotos, atracos y demás situaciones que se presenten y sean ajenas a nuestro servicio</textarea>
+								</div>
+							</div>
+							<div class="form-group col-lg-9 ">
+								<label for="nombre-usuario" class="control-label col-md-2">Texto Factura:</label>
+								<div class="col-md-10">
+									<textarea class="form-control" name="" id="" cols="40" rows="5">La empresa no se responsabiliza por daño, pérdida o deterioro ocurridos por motín, incendios, terremotos, atracos y demás situaciones que se presenten y sean ajenas a nuestro servicio</textarea>
+								</div>
+							</div>
+							<!-- <div class="clearfix"></div>		 -->
+							<button style="margin-bottom:45px" id="boton-form-impresion" class="button button-caution col-xs-4 col-sm-6 col-md-4">Actualizar</button>
+					</form>
+				</div>
+				</div>			
+			</div>
+		</div>
+	</div>
+	<footer>
+		<nav id="navbar_footer" class="navbar navbar-default navbar-fixed-bottom">
+		<div class="container-fluid">			
+		<a style="float:right;color:white" href="http://versatia.net" class="navbar-brand" target="_blank"><span class="helper-block ">Versatia.net</span></a>						
+		</div>
+		</nav>	
+	</footer>
+<script>
+$( "#btn1-setup" ).click(function() {
+	$("#tabla-tarifas").removeClass('hidden-xs hidden-sm hidden-md hidden-lg');
+	$("#boton-agregar-tarifa").removeClass('hidden-xs hidden-sm hidden-md hidden-lg');
+
+});
+
+$( "#boton-agregar-tarifa" ).click(function() {
+	$("#tabla-tarifas").addClass('hidden-xs hidden-sm hidden-md hidden-lg');
+	$('#form-agregar-tarifa').addClass('col-xs-12 col-sm-6 col-sm-offset-3 col-lg-8 col-lg-offset-3 animated bounceInDown')
+	$("#boton-agregar-tarifa").addClass('hidden-xs hidden-sm hidden-md hidden-lg');
+	$('#form-agregar-tarifa').removeClass('hidden-xs hidden-sm hidden-md hidden-lg ');
+	;
+});
+$( "#btn2-setup" ).click(function() {
+	$("#tabla-mensualidades").removeClass('hidden-xs hidden-sm hidden-md hidden-lg');
+	$("#boton-agregar-mensualidad").removeClass('hidden-xs hidden-sm hidden-md hidden-lg');
+
+});
+
+$( "#boton-agregar-mensualidad" ).click(function() {
+	$("#tabla-mensualidades").addClass('hidden-xs hidden-sm hidden-md hidden-lg');
+	$('#form-agregar-mensualidad').addClass('col-xs-12 col-sm-6 col-sm-offset-3 col-lg-8 col-lg-offset-3 animated bounceInDown')
+	$("#boton-agregar-mensualidad").addClass('hidden-xs hidden-sm hidden-md hidden-lg');
+	$('#form-agregar-mensualidad').removeClass('hidden-xs hidden-sm hidden-md hidden-lg ');
+	;
+});
+$( "#btn3-setup" ).click(function() {
+	$("#tabla-backup").removeClass('hidden-xs hidden-sm hidden-md hidden-lg');
+	$("#boton-agregar-backup").removeClass('hidden-xs hidden-sm hidden-md hidden-lg');
+
+});
+
+$( "#boton-agregar-backup" ).click(function() {
+	$("#tabla-backup").addClass('hidden-xs hidden-sm hidden-md hidden-lg');
+	$('#form-agregar-backup').addClass('col-xs-12 col-sm-6 col-sm-offset-3 col-lg-8 col-lg-offset-3 animated bounceInDown')
+	$("#boton-agregar-backup").addClass('hidden-xs hidden-sm hidden-md hidden-lg');
+	$('#form-agregar-backup').removeClass('hidden-xs hidden-sm hidden-md hidden-lg ');
+	;
+});
+$( "#btn4-setup" ).click(function() {
+	$('#form-impresion').addClass('col-xs-12 col-sm-6 col-sm-offset-3 col-lg-8 col-lg-offset-3 animated bounceInDown')
+	// $("#boton-impresion").addClass('hidden-xs hidden-sm hidden-md hidden-lg');
+	$('#form-impresion').removeClass('hidden-xs hidden-sm hidden-md hidden-lg ');
+	;
+});
+</script>
+</body>
+</html>
