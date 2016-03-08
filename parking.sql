@@ -334,11 +334,18 @@ CREATE TABLE IF NOT EXISTS `mydb`.`movimientos` (
   `creditos` VARCHAR(45) NOT NULL COMMENT '	',
   `fecha_movimiento` DATE NULL,
   `usuarios_id_usuario` INT NOT NULL,
+  `nota_contable_id_notacontable` INT NOT NULL,
   PRIMARY KEY (`id_movimiento_consecutivo`),
   INDEX `fk_movimientos_usuarios1_idx` (`usuarios_id_usuario` ASC),
+  INDEX `fk_movimientos_nota_contable1_idx` (`nota_contable_id_notacontable` ASC),
   CONSTRAINT `fk_movimientos_usuarios1`
     FOREIGN KEY (`usuarios_id_usuario`)
     REFERENCES `mydb`.`usuarios` (`id_usuario`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_movimientos_nota_contable1`
+    FOREIGN KEY (`nota_contable_id_notacontable`)
+    REFERENCES `mydb`.`nota_contable` (`id_notacontable`)
     ON DELETE NO ACTION
     ON UPDATE NO ACTION)
 ENGINE = InnoDB
