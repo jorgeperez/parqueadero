@@ -1,0 +1,801 @@
+@import "nib"
+@font-face {
+	font-family: 'parking';
+	src:url('../fonts/parking.eot?-br4ub6');
+	src:url('../fonts/parking.eot?#iefix-br4ub6') format('embedded-opentype'),
+		url('../fonts/parking.ttf?-br4ub6') format('truetype'),
+		url('../fonts/parking.woff?-br4ub6') format('woff'),
+		url('../fonts/parking.svg?-br4ub6#parking') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+	font-family: 'parking';
+	speak: none;
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.icon-cajero:before {
+	content: "\e940";
+}
+.icon-auditar_usuarios:before {
+	content: "\e944";
+}
+.icon-xpress:before {
+	content: "\e94f";
+}
+.icon-auditar_registros:before {
+	content: "\e953";
+}
+.icon-mirar_usuarios:before {
+	content: "\e971";
+}
+.icon-usuarios:before {
+	content: "\e972";
+}
+.icon-añadir_usuario:before {
+	content: "\e973";
+}
+.icon-configurar:before {
+	content: "\e994";
+}
+.icon-auditar_ingresos:before {
+	content: "\e99c";
+}
+.icon-auditorias:before {
+	content: "\e9b8";
+}
+html
+	overflow-x hidden
+       
+body
+	color black
+	font-size 16px
+	// background-color gray
+.loggin
+	h2
+		margin-bottom 8%
+	// border-top 10px solid yellow
+	input
+		&:focus
+			outline none
+		// width %
+		border-radius 0
+		background #FFC700
+		height 40px
+		font-size 20px
+		outline none
+		border none !important	
+		box-shadow none !important
+			
+	span
+		&:focus
+			outline none
+		background #FFC700
+	
+	background rgba(black,.7)
+	color white
+	margin-top 50px
+	height 75%
+	border-top 7px solid #FFC700
+	padding 0 20px 0 10px
+#boton1
+	margin-top 40px
+	background #222
+	color white
+	&:hover
+		background #FFC700
+		color white
+#incluir
+	border-right: 1px solid #FFC700
+	background #222222
+	color white
+	&:hover
+		background #19FF58
+		border 1px solid #FFC700
+		// color black
+#retirar
+	border-left: 1px solid #FFC700
+	background #222222
+	color white
+	&:hover
+		background #FF9300
+		border 1px solid #FFC700
+		// color black
+.icono_form
+	background #FFC700
+	border none
+	color white
+	font-size 20px
+	// border-right 10px solid red
+
+#navbar_parking
+	border-bottom 4px solid #FFC700
+	background yellow
+	margin-bottom 20px
+	padding-bottom 10px
+#navbar_footer
+	background rgba(#FFC700,.7)
+	border-top 2px solid black
+	min-height 20px !important
+	
+
+	
+#cajero,#usuarios,#auditorias,#configurar,#users,#ingresos,#registros,#xpress
+	cursor pointer
+	height 260px
+	border 1px solid #FFC700
+
+#auditorias,#configurar,#registros,#xpress
+	margin-bottom 50px
+	
+.estilo_iconos	
+	padding-top 30px
+	a
+		text-decoration none
+		font-size 10em
+#cajero
+	a
+		color #FEC63D	
+#texto_cajero
+	span
+		font-size 1.5em
+		color #AF7A23
+#usuarios
+	a
+		color #FF6624
+#texto_usuarios
+	font-size 1.5em
+	color #AF3A2E
+#auditorias
+	a
+		color gray
+#texto_auditorias
+	font-size 1.5em
+	color white
+#configurar
+	a
+		color #629C44
+#texto_configurar
+	font-size 1.5em
+	color #355723
+#cajero,#usuarios,#auditorias,#configurar 
+	-vendor-animation-duration 0.5s
+	-vendor-animation-delay 2s
+	-vendor-animation-iteration-count infinite
+#botones-setup
+	button
+		background-color #FEC63D		
+#btn1-setup,#btn2-setup,#btn3-setup
+	border-right 1px solid white
+#boton-back
+	position:absolute;
+	right 60px
+	top 10px
+	color  #FEC63D	
+	font-size 1.5em
+	text-decoration none
+#placa_1,#placa_2
+	background-color #000000
+	outline none !important
+	box-shadow none !important
+	border none
+	color white
+	&:focus
+		outline none
+#inputs-text-cajero
+	// background #FFC700
+	margin-bottom 30px
+	input
+		background #FFC700
+		// border 2px solid white
+		color white	
+
+	
+/////////////////////////////////////////////////
+//											 ///																		
+//			    CAJERO.HTML					///
+//											///				
+///////////////////////////////////////////////
+#botones_caja
+	position absolute
+	// top 65px
+	// float right
+	.btn-group
+		border 0
+	.boton_caja
+		// margin-left 5px
+		border-radius 0px
+		border 1px solid #FEC63D
+		&:hover
+			background-color #FEC63D
+			color white
+#mapa
+	border 1px solid red
+	margin-top 60px
+	height 500px
+	// right -100px
+#tirilla,#factura
+	border 2px solid black
+	margin-top 50px
+	height 500px
+	// width 88%		
+	p
+		margin 0
+		font-size 12px
+	h1,h3,h4
+		text-align center
+	#title-tirilla
+		margin-bottom 5px
+		border-radius 0 0 5px 5px
+		background-color #FFD400
+		border-bottom 2px solid black
+		border-right 2px solid black
+		border-left 2px solid black
+		width 100%
+		padding-left 5px
+	#texto-tirilla
+		position absolute
+		bottom 50px
+		margin 0
+	#botones-tirilla
+		background-color #FFD400
+		border-top 2px solid black
+		border-right 2px solid black
+		border-left 2px solid black
+		position absolute
+		bottom 0
+		button
+			width 30%
+			font-size 1.3em
+		#button-cancelar
+			position absolute
+			right 20px
+#botones-factura
+		margin-bottom 10px
+		margin-top 50px
+		button
+			border-radius 0
+			
+//PANEL-USERS
+
+	#icon-ver-usuarios
+		a
+			color #009ACD
+	#icon-agregar-usuarios
+		a
+			color #008B45
+	#texto-ver-usuarios
+		font-size 2em
+		color #4682B4
+	#texto-agregar-usuarios
+		font-size 2em
+		color #3D9140
+	#ver-usuarios
+		border 1px solid black
+		text-align center
+	#agregar-usuarios
+		border 1px solid black
+		text-align center
+	#tabla-usuarios
+		overflow-x visible
+#boton-agregar-usuario,#boton-auditar-usuario,#boton-agregar-tarifa,#boton-form-agregar-tarifa,#boton-agregar-mensualidad,#boton-form-agregar-mensualidad,#boton-agregar-backup,#boton-form-agregar-backup,#boton-form-impresion,#boton-enviar-usuario
+	font-weight bold
+	background #FFC700
+	color white
+	border 0
+	border-radius 0
+	&:hover
+		background #222
+		color white
+#form-agregar-usuario
+	label
+		color white
+#cont_tabla_users
+		background-color rgba(black,.7)
+		margin-top 30px
+		border 2px solid #FFD400
+		// margin-bottom 50px
+#row_top
+	margin-top 10px
+	
+//////////////////////////////////
+
+//PANEL-AUDITORIA
+#users
+	a
+		color #72BB53
+#texto_users,#texto_ingresos,#texto_registros,#texto_xpress
+	font-size 1.5em
+	margin-top 10px
+#texto_users
+	color #355723
+#ingresos
+	a
+		color #C3BB38
+#texto_ingresos
+	color #7C614B
+#registros
+	a
+		color #7D2709
+#texto_registros
+	color #5B1A04
+#xpress
+	a
+		color #3D2860
+#texto_xpress
+	color #4D2820
+
+//AUDITAR-USUARIOS
+#form-auditar-usuarios,#form-auditar-registros
+	label
+		color white
+#datos-auditar-usuario
+		border 1px solid red
+		height 470px
+		margin-bottom 70px
+//AUDITAR-REGISTROS
+#datos-auditar-registros
+		border 1px solid red
+		height 470px
+		margin-bottom 70px
+//CONFIGURACION
+#tabla-tarifas,#form-agregar-tarifa,#tabla-mensualidades,#form-agregar-mensualidad,#tabla-backup,#form-agregar-backup,#form-impresion
+	label
+		color white
+	color #FFC700
+
+	
+	
+	
+		
+@media screen and (max-width 768px)
+	#navbar_parking
+		background blue
+		// opacity .7
+	h2
+		font-size 20px
+	.loggin
+		background-color rgba(black,.7)
+		border 2px solid #FFD400
+		border-top 6px solid #FFD400
+		height 80%
+		input
+			width 100px
+		#boton1
+		// font-size 18px
+			transform scale(.8)
+	#boton-ingresar-index
+		margin-top -30px
+	#auditorias,#registros
+		margin-bottom 0
+	#cajero,#usuarios,#auditorias
+		border-bottom 0
+		margin 0
+	#texto_cajero,#texto_usuarios,#texto_auditorias,#texto_configurar
+		margin-top 10px
+	#cajero,#usuarios,#auditorias,#configurar,#users,#ingresos,#registros,#xpress
+		border 0px
+	#form_cajero
+		margin-top 50px
+		// width 100%
+		margin-left 5px
+	#placa_1,#placa_2
+		height 100px
+		margin-top 20px
+		font-size 2.5em
+		text-align center
+		// width 50%
+	#placa_1
+		border-right 2px solid white
+	#combobox
+		left 0
+		margin-top 40px
+		text-align center
+	#incluir,#retirar
+		height 50px
+	
+		#boton-ver-carros
+			// width 100%
+	#ver-carros
+		margin-top 30px
+		margin-bottom 10px
+	#factura
+		margin-bottom 80px
+	#form-auditar-registros
+		.form-group
+			label
+				margin-left 15px
+		#placa1,#placa2
+			width 150px
+			height 70px
+			margin-bottom 15px
+			font-size 2em
+	#container_panel
+		background-color:  rgba(black,.7)
+		border 2px dashed #FFC700
+	#panel_cajero
+		background-color rgba(black,.7)
+		margin-top 30px
+		border 2px solid #FFD400
+	.bg
+		background black
+	
+
+			
+@media screen and (min-width 769px)
+	.bg
+		background url("../img/bg3.jpg") no-repeat center fixed
+		-webkit-background-size cover
+		-moz-background-size cover
+		-o-background-size cover
+		background-size cover
+		position relative
+	#navbar_parking
+		background red
+		// opacity .7
+	#auditorias
+		margin-bottom 0
+	#cajero,#usuarios,#auditorias
+		border-bottom 0
+	#texto_cajero,#texto_usuarios,#texto_auditorias,#texto_configurar
+		margin-top 10px
+		// margin-left 50px
+	#cajero-icon
+		margin-right -40px
+	#cajero,#usuarios,#auditorias,#configurar,#users,#ingresos,#registros,#xpress
+		border 0px
+	#incluir,#retirar
+		height 70px
+		font-size 1.5em
+	#placa_1,#placa_2
+		// width 100px
+		height 100px
+		margin-top 20px
+		font-size 2.5em
+		text-align center
+	#placa_1
+		border-right 2px solid white
+	#combobox
+		left 0
+		margin-top 40px
+		text-align center
+	#form_cajero
+		margin-top 30px
+	#mapa
+		margin-bottom 100px
+		position absolute
+	#tirilla
+		margin-left 28px		
+	#registros
+		margin-bottom 0px
+	#boton-auditar-usuario
+		margin-left 35px
+	#form-auditar-registros
+		#placa1,#placa2
+			// width 80px
+			// height 70px
+			margin-bottom 15px
+			// font-size 2em
+			text-align center
+		#option-auditar-registros
+			margin-top -50px
+	#botones-setup
+		button
+			padding 0
+	#boton-form-agregar-tarifa
+		margin-left 20px
+	#container_panel
+			background-color:  rgba(black,.7)
+			border 2px dashed #FFC700
+	#panel_cajero
+		background-color rgba(black,.7)
+		margin-top 15px
+		border 2px solid #FFD400
+
+
+
+@media screen and (min-width 992px)	
+	.bg
+		background url("../img/bg3.jpg") no-repeat center fixed
+		-webkit-background-size cover
+		-moz-background-size cover
+		-o-background-size cover
+		background-size cover
+		position relative
+	#container_panel
+		border none
+		background none
+	#navbar_parking
+		background purple
+		// opacity .7
+	#auditorias
+		border-bottom 1px solid black
+		border-right 0		
+	#cajero
+		border-right 0
+	#texto_cajero,#texto_usuarios,#texto_auditorias,#texto_configurar
+		margin-top 10px
+		margin-left 0
+	#cajero,#usuarios,#auditorias,#configurar,#users,#ingresos,#registros,#xpress
+		border 1px solid black
+	#cajero
+		border-bottom 0	
+	#usuarios
+		border-left 0
+		border-bottom 0
+	#configurar
+		border-left 0
+	#tirilla
+		margin-left 35px
+	#xpress, #registros
+		margin-bottom 70px
+	#cajero,#usuarios,#auditorias,#configurar
+		background-color white
+	#boton-auditar-usuario
+		margin-left 60px
+	#form-auditar-registros
+		#placa1,#placa2
+			// width 80px
+			// height 70px
+			margin-bottom 15px
+			// font-size 2em
+			text-align center
+		#option-auditar-registros
+			margin-top -50px
+			margin-left 30px
+	#cajero,#usuarios,#auditorias,#configurar
+		background-color rgba(black, .7)
+		span
+			opacity 1
+	#cajero,#usuarios,#auditorias,#configurar
+		border 2px solid #FFD400
+	#cajero
+		border-right none
+		border-bottom 2px solid black
+	#usuarios
+		border-left 2px solid black
+		border-bottom 2px solid black
+	#configurar
+		border-top none
+		border-left 2px solid black
+	#auditorias 
+		border-top none
+		border-right none
+	#panel_cajero
+		background-color rgba(black,.7)
+		margin-top 20px
+		border 2px solid #FFD400
+	#incluir,#retirar
+		margin-bottom 25px
+	#tirilla,#factura
+		margin-bottom 20px
+
+//_____________________________________________________________________
+@media screen and (min-width 1200px)
+	.bg
+		background url("../img/bg3.jpg") no-repeat center fixed
+		-webkit-background-size cover
+		-moz-background-size cover
+		-o-background-size cover
+		background-size cover
+		position relative
+	#container_panel
+		border none
+		background none
+	#navbar_parking
+		background black
+		// opacity .7
+	#placa_2
+		margin-left 40px
+	#placa_1,#placa_2
+		// width 100px
+		height 100px
+		margin-top 20px
+		font-size 2.5em
+		text-align center
+	#placa_1
+		border-right 0
+	#combobox
+		margin-top 40px
+		margin-bottom 60px
+		position absolute
+		// left 110px
+		select
+			border-radius 0
+			border 0
+	#incluir,#retirar
+		margin-top 20px
+	#form_cajero
+		margin-top 10px
+	#botones-factura
+		margin-top 80px
+	#retirar
+		// margin-left 50px
+	#botones-factura
+		margin-bottom 50px
+		margin-top 110px
+		margin-left 75px
+		button
+			border-radius 0
+	#mapa-desktop
+		border 1px dashed red
+		height 68%
+		margin-top 3px
+		position absolute
+		background none
+		right 20px
+	#fadebox
+		position absolute
+		background-color black
+		width 100%
+		height 100%
+		z-index 3
+		opacity .6
+		display none
+		
+	.tirilla_desktop
+		border-radius 5px
+		position absolute
+		height 95%
+		width 30%
+		border .3em solid black
+		z-index 3
+		left 36em
+		top .3em
+		background-color white
+		display block
+		cursor default
+		h3,h2,h1
+			text-align center
+		p
+			margin 0
+			padding-left 1em
+		.close_tirilla
+			text-align center
+			cursor move
+			width 100%
+			height 1.4em
+			border-bottom .3em solid black
+			background-color #FFD400
+			a
+				position absolute
+				right 1em
+		.texto_bottom
+			text-align center
+			padding-top 2em
+		.imprimir-icon
+			position absolute
+			cursor pointer
+			color #636359
+			right 10px
+			top 95%
+			font-size 1.5em
+			
+	.factura_desktop
+			border-radius 5px
+			position absolute
+			height 95%
+			width 30%
+			border .3em solid black
+			z-index 3
+			left 36em
+			top .3em
+			background-color white
+			display block
+			cursor default
+			h4,h2,h1
+				margin-top .3em
+				padding 0
+				text-align center
+			p
+				margin 0
+				padding-left 1em
+			.close_factura
+				text-align center
+				cursor move
+				width 100%
+				height 1.4em
+				border-bottom .3em solid black
+				background-color #FFD400
+				a
+					position absolute
+					right 1em
+			.imprimir-icon
+				position absolute
+				cursor pointer
+				color #636359
+				right 10px
+				top 95%
+				font-size 1.5em
+	#cajero,#usuarios,#auditorias,#configurar
+		border 2px solid #FFD400
+	#cajero
+		border-right none
+		border-bottom 2px solid black
+	#usuarios
+		border-left 2px solid black
+		border-bottom 2px solid black
+	#configurar
+		border-top none
+		border-left 2px solid black
+	#auditorias 
+		border-top none
+		border-right none
+	#ver-usuarios,#agregar-usuarios
+		position absolute
+		top 150
+		cursor pointer
+	#ver-usuarios
+		border-right 0
+	#registros,#xpress
+		margin-bottom 40px
+	#users
+		border-bottom 0px
+	#ingresos
+		border-left 0px
+	#xpress
+		border-left 0px
+	#ingresos
+		border-bottom 0px
+
+	#cajero,#usuarios,#auditorias,#configurar
+		background rgba(black,.7)
+	#form-auditar-usuarios
+		#primera_fecha,#segunda_fecha,#usuario_auditar
+			width 240px
+	#boton-auditar-usuario
+		margin-left 85px
+	#form-auditar-registros
+		#placa1,#placa2
+			// width 80px
+			// height 70px
+			margin-bottom 15px
+			// font-size 2em
+			text-align center
+		#option-auditar-registros
+			margin-top -95px
+			margin-left 30px
+		#boton-auditar-registros
+			margin-top -50px
+	#panel_cajero
+		background-color rgba(black,.7)
+		margin-top 30px
+		border 2px solid #FFD400
+	#boton-ver-carros
+		margin-bottom 20px
+	// #inputs-text-cajero
+	// 	// background #FFC700
+	// 	margin-bottom 30px
+	// 	input
+	// 		background #FFC700
+	// 		// border 2px solid white
+	// 		color white	
+	#incluir,#retirar
+		margin-bottom 5px
+	
+		
+	
+	
+
+	
+
+
+		
+		
+	
+
+
+		
+	
+		
+		
