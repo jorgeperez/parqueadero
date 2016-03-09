@@ -8,6 +8,7 @@
 	<script src="../js/jquery-1.11.2.js"></script>
 	<script src="../js/jquery-ui.js"></script>
 	<script src="../js/bootstrap.min.js"></script>
+	
 	<title>Auditar Usuarios | Parking System</title>
 </head>
 <body id="cuerpo-auditar-usuarios" class="bg">
@@ -19,24 +20,21 @@
 	</header>
 	<div class="container">
 		<div class="row">
-			<div style="margin-bottom:30px;" class="search col-xs-12 col-sm-7 col-sm-offset-0 col-md-4 col-md-offset-8 col-lg-4 col-lg-offset-8 ">
-					<div class="input-group ">
-		    		<div class="input-group-addon icono_form"><span class="glyphicon glyphicon-search" </span></div>
-		      		<input type="text" class="form-control" id="inputEmail3" placeholder="Buscar">
-		    	</div>
+			<div style="margin-bottom:30px;" class="search col-xs-12 col-sm-7 col-sm-offset-0 col-md-4 col-md-offset-8 col-lg-4 col-lg-offset-8 ">	
 			</div>
 		</div>
-		<div class="row">
-			<form id="form-auditar-usuarios" action="" class="form-inline col-xs-12 col-sm-12 col-md-12 col-md-offset-1 col-lg-11 col-lg-offset-1">
+		<div id="panel_auditar_usuario" class="row">
+			<h3 style="margin-top:10px;margin-bottom:30px" ><span class="label label-default label-danger" style="border-radius:0px">Auditar usuarios</span></h3>
+			<form id="form-auditar-usuarios" action="" class="form-inline col-xs-12 col-sm-12 col-md-11 col-md-offset-1 col-lg-11 col-lg-offset-1">
 				<div class="form-group col-sm-4 col-md-4">
 					<label for="primera_fecha" >Del:</label>
 					<input type="date" class="form-control" id="primera_fecha" >
 				</div>
-				<div class="form-group col-sm-4 col-md-4">													
+				<div class="form-group col-sm-4 col-md-4">				
 					<label for="segunda_fecha" >Al:</label>
 					<input type="date" class="form-control" id="segunda_fecha">							
 				</div>
-				<div class="form-group col-sm-4 col-md-4">													
+				<div class="form-group col-sm-4 col-md-4">				
 					<label for="usuario_auditar" ></label>
 					<input type="text" class="form-control" id="usuario_auditar" placeholder="ID-Usuario">							
 				</div>
@@ -57,7 +55,7 @@
 					</label>				
 				</div>
 
-				<button style="margin-top:20px" id="boton-auditar-usuario" class="btn btn-primary col-xs-12 col-sm-4 col-sm-offset-1 col-md-3">Enviar</button>			
+				<button style="margin-top:20px;margin-bottom:10px" id="boton-auditar-usuario" class="btn btn-primary col-xs-12 col-sm-4 col-sm-offset-1 col-md-4 col-md-offset-1 col-lg-3">Enviar</button>			
 			</form>
 		</div>
 		<div class="row">
