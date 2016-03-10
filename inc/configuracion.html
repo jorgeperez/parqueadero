@@ -101,19 +101,22 @@
 				<div class="row ">
 						<form style="margin-top:0" id="form-agregar-tarifa" action="" class="form-horizontal hidden-xs hidden-sm hidden-md hidden-lg ">
 							<div class="form-group col-lg-9 ">
-								<label for="nombre-usuario" class="control-label col-md-2">Nombre:</label>
+								<label for="nombre-usuario" class="control-label col-md-2 ">Nombre:</label>
 								<div class="col-md-10">
-									<input type="text" class="form-control" id="nombre-usuario">
+									<input type="text" class="form-control col-lg-12 col-lg-offset-4" id="nombre-usuario">
 								</div>
 							</div>
 							<div class="form-group col-lg-9 ">	
 									<label for="contraseña-usuario" class="control-label col-md-2 disabled">Valor:</label>
 									<div class="col-md-10">
-										<input type="text" class="form-control" id="contraseña-usuario">
+										<input type="text" class="form-control col-lg-offset-4" id="contraseña-usuario">
 									</div>
 								</div>
+								<div class="form-group col-lg-12">	
+									<button style="" id="boton-form-agregar-tarifa" class="button button-caution col-xs-4 col-sm-6 col-md-4 col-lg-12 col-lg-offset-4">Enviar</button>
+								</div>
 							<div class="clearfix"></div>		
-							<button style="" id="boton-form-agregar-tarifa" class="button button-caution col-xs-4 col-sm-6 col-md-4">Enviar</button>
+							
 						</form>
 					</div>
 					<!-- <div class="clearfix"></div> -->
@@ -186,27 +189,30 @@
 						<form style="margin-top:0" id="form-agregar-mensualidad" action="" class="form-horizontal hidden-xs hidden-sm hidden-md hidden-lg">
 
 							<div class="form-group col-lg-9 ">
-								<label for="nombre-usuario" class="control-label col-md-2">Cliente:</label>
+								<label for="nombre-usuario" class="control-label col-md-2 ">Cliente:</label>
 								<div class="col-md-10">
-									<input type="text" class="form-control" id="nombre-usuario">
+									<input type="text" class="form-control col-lg-12 col-lg-offset-4" id="nombre-usuario">
 								</div>
 							</div>
 							<div class="form-group col-lg-9 ">	
-									<label for="contraseña-usuario" class="control-label col-md-2 ">Cédula:</label>
+									<label for="contraseña-usuario" class="control-label col-md-2 disabled">Cedula:</label>
 									<div class="col-md-10">
-										<input type="text" class="form-control" id="contraseña-usuario">
+										<input type="text" class="form-control col-lg-offset-4" id="contraseña-usuario">
 									</div>
-							</div>
-							<div class="form-group col-lg-9">				
-								<select name="" id="option" class="form-control col-lg-9">
+								</div>
+							<div class="form-group col-lg-9 col-lg-offset-6">				
+								<select name="" id="option" class="form-control ol-lg-8 col-lg-offset-3">
 									<option value='' disabled selected style='display:none;'>Tipo</option>
 									<option value="">Mensualidad Moto</option>
 									<option value="">Mensualidad Carro</option>
 									<option value="">Mensualidad Full</option>
 								</select>
 							</div>
-							<!-- <div class="clearfix"></div>		 -->
-							<button style="" id="boton-form-agregar-mensualidad" class="button button-caution col-xs-4 col-sm-6 col-md-4">Crear</button>
+							<div class="clearfix"></div>		
+								<div class="form-group col-lg-12">	
+									<button style="" id="boton-form-agregar-tarifa" class="button button-caution col-xs-4 col-sm-6 col-md-4 col-lg-12 col-lg-offset-4">Enviar</button>
+								</div>
+							
 						</form>
 				</div>
 				<div class="row">
@@ -273,36 +279,38 @@
 					<form style="margin-top:0" id="form-agregar-backup" action="" class="form-horizontal hidden-xs hidden-sm hidden-md hidden-lg">
 
 							<div class="form-group col-lg-9 ">
-								<label for="nombre-usuario" class="control-label col-md-2">Fecha:</label>
+								<label for="nombre-usuario" class="control-label col-md-2 ">Fecha:</label>
 								<div class="col-md-10">
-									<input type="text" class="form-control" id="nombre-usuario">
+									<input type="date" class="form-control col-lg-12 col-lg-offset-4" id="nombre-usuario">
 								</div>
 							</div>
 							
 							<div class="form-group col-lg-9">				
-								<select name="" id="option" class="form-control col-lg-9">
+								<select name="" id="option" class="form-control  col-lg-12 col-lg-offset-4">
 									<option value='' disabled selected style='display:none;'>Tipo</option>
 									<option value="">Backup Sitio</option>
 									<option value="">Backup Base de Datos</option>
 									<option value="">Backup Completo</option>
 								</select>
 							</div>
-							<!-- <div class="clearfix"></div>		 -->
-							<button style="" id="boton-form-agregar-backup" class="button button-caution col-xs-4 col-sm-6 col-md-4">Crear</button>
+							<div class="clearfix"></div>		
+								<div class="form-group col-lg-12">	
+									<button style="" id="boton-form-agregar-tarifa" class="button button-caution col-xs-4 col-sm-6 col-md-4 col-lg-12 col-lg-offset-4">Enviar</button>
+								</div>
 					</form>
 				</div>
 							<div class="row">
 					<form style="margin-top:0" id="form-impresion" action="" class="form-horizontal hidden-xs hidden-sm hidden-md hidden-lg">
 
-							<div class="form-group col-lg-9 ">
+							<div class="form-group col-lg-9 col-lg-offset-12 ">
 								<label for="nombre-usuario" class="control-label col-md-2">Logo:</label>
 								<div class="col-md-10">
-									<input type="file" class="form-control" id="nombre-usuario">
+									<input type="file" class="form-control col-lg-offset-3" id="nombre-usuario">
 								</div>
 							</div>
 							
 							<div class="form-group col-lg-9">				
-								<select name="" id="option" class="form-control col-lg-9">
+								<select name="" id="option" class="form-control col-lg-9 col-lg-offset-3">
 									<option value='' disabled selected style='display:none;'>Tipo de letra</option>
 									<option value="">Arial</option>
 									<option value="">Times new roman</option>
@@ -312,17 +320,17 @@
 							<div class="form-group col-lg-9 ">
 								<label for="nombre-usuario" class="control-label col-md-2">Texto Tirilla:</label>
 								<div class="col-md-10">
-									<textarea class="form-control"name="" id="" cols="40" rows="5">La empresa no se responsabiliza por daño, pérdida o deterioro ocurridos por motín, incendios, terremotos, atracos y demás situaciones que se presenten y sean ajenas a nuestro servicio</textarea>
+									<textarea class="form-control col-lg-offset-3"name="" id="" cols="40" rows="5">La empresa no se responsabiliza por daño, pérdida o deterioro ocurridos por motín, incendios, terremotos, atracos y demás situaciones que se presenten y sean ajenas a nuestro servicio</textarea>
 								</div>
 							</div>
 							<div class="form-group col-lg-9 ">
 								<label for="nombre-usuario" class="control-label col-md-2">Texto Factura:</label>
 								<div class="col-md-10">
-									<textarea class="form-control" name="" id="" cols="40" rows="5">La empresa no se responsabiliza por daño, pérdida o deterioro ocurridos por motín, incendios, terremotos, atracos y demás situaciones que se presenten y sean ajenas a nuestro servicio</textarea>
+									<textarea class="form-control col-lg-offset-3" name="" id="" cols="40" rows="5">La empresa no se responsabiliza por daño, pérdida o deterioro ocurridos por motín, incendios, terremotos, atracos y demás situaciones que se presenten y sean ajenas a nuestro servicio</textarea>
 								</div>
 							</div>
 							<!-- <div class="clearfix"></div>		 -->
-							<button style="margin-bottom:45px" id="boton-form-impresion" class="button button-caution col-xs-4 col-sm-6 col-md-4">Actualizar</button>
+							<button style="margin-bottom:45px" id="boton-form-impresion" class="button button-caution col-xs-12  ">Actualizar</button>
 					</form>
 				</div>
 				</div>			
@@ -345,7 +353,7 @@ $( "#btn1-setup" ).click(function() {
 
 $( "#boton-agregar-tarifa" ).click(function() {
 	$("#tabla-tarifas").addClass('hidden-xs hidden-sm hidden-md hidden-lg');
-	$('#form-agregar-tarifa').addClass('col-xs-12 col-sm-6 col-sm-offset-3 col-lg-8 col-lg-offset-3 animated bounceInDown')
+	$('#form-agregar-tarifa').addClass('col-xs-12 col-sm-6 col-sm-offset-3 col-lg-6 col-lg-offset-3 animated bounceInDown')
 	$("#boton-agregar-tarifa").addClass('hidden-xs hidden-sm hidden-md hidden-lg');
 	$('#form-agregar-tarifa').removeClass('hidden-xs hidden-sm hidden-md hidden-lg ');
 	;
@@ -358,7 +366,7 @@ $( "#btn2-setup" ).click(function() {
 
 $( "#boton-agregar-mensualidad" ).click(function() {
 	$("#tabla-mensualidades").addClass('hidden-xs hidden-sm hidden-md hidden-lg');
-	$('#form-agregar-mensualidad').addClass('col-xs-12 col-sm-6 col-sm-offset-3 col-lg-8 col-lg-offset-3 animated bounceInDown')
+	$('#form-agregar-mensualidad').addClass('col-xs-12 col-sm-6 col-sm-offset-3 col-lg-6 col-lg-offset-3 animated bounceInDown')
 	$("#boton-agregar-mensualidad").addClass('hidden-xs hidden-sm hidden-md hidden-lg');
 	$('#form-agregar-mensualidad').removeClass('hidden-xs hidden-sm hidden-md hidden-lg ');
 	;
@@ -371,13 +379,13 @@ $( "#btn3-setup" ).click(function() {
 
 $( "#boton-agregar-backup" ).click(function() {
 	$("#tabla-backup").addClass('hidden-xs hidden-sm hidden-md hidden-lg');
-	$('#form-agregar-backup').addClass('col-xs-12 col-sm-6 col-sm-offset-3 col-lg-8 col-lg-offset-3 animated bounceInDown')
+	$('#form-agregar-backup').addClass('col-xs-12 col-sm-6 col-sm-offset-3 col-lg-6 col-lg-offset-3 animated bounceInDown')
 	$("#boton-agregar-backup").addClass('hidden-xs hidden-sm hidden-md hidden-lg');
 	$('#form-agregar-backup').removeClass('hidden-xs hidden-sm hidden-md hidden-lg ');
 	;
 });
 $( "#btn4-setup" ).click(function() {
-	$('#form-impresion').addClass('col-xs-12 col-sm-6 col-sm-offset-3 col-lg-8 col-lg-offset-3 animated bounceInDown')
+	$('#form-impresion').addClass('col-xs-12 col-sm-6 col-sm-offset-3 col-lg-8 col-lg-offset-2 animated bounceInDown')
 	// $("#boton-impresion").addClass('hidden-xs hidden-sm hidden-md hidden-lg');
 	$('#form-impresion').removeClass('hidden-xs hidden-sm hidden-md hidden-lg ');
 	;
