@@ -346,7 +346,7 @@ body
 		text-align center
 	#tabla-usuarios
 		overflow-x visible
-#boton-agregar-usuario,#boton-auditar-usuario,#boton-agregar-tarifa,#boton-form-agregar-tarifa,#boton-agregar-mensualidad,#boton-form-agregar-mensualidad,#boton-agregar-backup,#boton-form-agregar-backup,#boton-form-impresion,#boton-enviar-usuario,#boton-auditar-registros,#boton_agregar_arqueo
+#boton-agregar-usuario,#boton-auditar-usuario,#boton-agregar-tarifa,#boton-form-agregar-tarifa,#boton-agregar-mensualidad,#boton-form-agregar-mensualidad,#boton-agregar-backup,#boton-form-agregar-backup,#boton-form-impresion,#boton-enviar-usuario,#boton-auditar-registros,#boton_agregar_arqueo,#boton-auditar-ingresos
 	font-weight bold
 	background #FFC700
 	color white
@@ -419,7 +419,12 @@ body
 #datos-auditar-registros
 		border 1px solid red
 		height 470px
-		margin-bottom 70px		
+		margin-bottom 70px	
+//AUDITAR-INGRESOS
+#graficos_ingresos
+	height 50%
+	border 1px dashed red
+	margin-bottom 20px
 
 //CONFIGURACION
 #tabla-tarifas,#form-agregar-tarifa,#tabla-mensualidades,#form-agregar-mensualidad,#tabla-backup,#form-agregar-backup,#form-impresion
@@ -433,12 +438,17 @@ body
 	border 2px solid #FFD400
 	margin-bottom 10px
 	padding-right:0px
-#panel_auditar_registro
+#panel_auditar_registro,#panel_auditar_ingresos
 	background-color rgba(black,.7)
 	padding-top 20px
 	border 2px solid #FFD400
 	margin-bottom 10px
 	padding-right:0px
+#panel_auditar_ingresos
+	padding-bottom 10px
+	label
+		color white
+
 #btn1-setup,#btn2-setup,#btn3-setup,#btn4-setup
 		border 1px solid #ffc700
 		background-color rgba(black,.7) !important
@@ -634,6 +644,10 @@ body
 		border-left 2px dashed #ffc700
 	#boton-agregar-usuario
 		margin-left 12px
+	#boton-auditar-ingresos
+		margin-top 10px
+
+		
 	
 		
 	
@@ -730,8 +744,9 @@ body
 	#xpress
 		border-right 2px solid #ffc700
 		border-bottom 2px solid #ffc700
-	#boton-agregar-usuario
-		margin-left 15px
+	#boton-auditar-ingresos
+		margin-top 0px
+
 
 //_____________________________________________________________________
 @media screen and (min-width 1200px)
@@ -918,8 +933,8 @@ body
 		#option-auditar-registros
 			margin-top -95px
 			margin-left 30px
-		#boton-auditar-registros
-			margin-top -50px
+		// #boton-auditar-registros
+		// 	margin-top -50px
 			
 	#panel_cajero
 		background-color rgba(black,.7)
@@ -962,9 +977,17 @@ body
 	// border 2px solid #FFc700
 		transition all 2s;
 		margin-top 20px
-	label
-		color white
+		label
+			color white
+	#panel_auditar_ingresos
+		#option-auditar-ingresos
+			margin-left 80px
+	#boton-auditar-registros
+		margin-top -47px
+	#boton-auditar-ingresos
+		margin-top 3px
 		
+				
 	
 
 
