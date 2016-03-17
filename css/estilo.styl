@@ -221,13 +221,17 @@ body
 	// float right
 	.btn-group
 		border 0
-	.boton_caja
-		// margin-left 5px
-		border-radius 0px
-		border 1px solid #FEC63D
-		&:hover
-			background-color #FEC63D
-			color white
+#boton_arqueo
+	margin-top -20px
+	font-weight bold
+	background black
+	color #ccc
+	border-radius 0
+	border-bottom 2px solid #FFc700
+	border-right 2px solid #FFc700
+	border-left 2px solid #FFc700
+	border-top 0
+
 #mapa
 	border 1px solid red
 	margin-top 60px
@@ -280,9 +284,9 @@ body
 	padding-bottom 10px
 	top -20px 
 	background-color black
-	border-bottom  3px solid #FFc700
+	border-bottom 2px solid #FFc700
 	border-right 3px solid #FFc700
-	border-left 3px solid #FFc700
+	border-left 2px solid #FFc700
 	input
 		outline none !important
 		box-shadow none !important
@@ -299,7 +303,27 @@ body
 		color white
 	.input-group-addon
 		height 30px
-		margin-bottom 10px
+		// margin-bottom 10px
+#panel_arqueo
+	// background-color rgba(black,.7)
+	border 2px solid #FFc700
+	transition all 2s;
+	margin-top 20px
+	margin-bottom 20px
+	padding-top 10px
+	label
+		color white
+	input
+		outline none !important
+		box-shadow none !important
+		border 1px solid white
+		color white	
+		background-color black
+		border-radius 0
+		font-size 1em
+		font-weight bold
+		&:focus
+			outline none
 //PANEL-USERS
 
 	#icon-ver-usuarios
@@ -322,7 +346,7 @@ body
 		text-align center
 	#tabla-usuarios
 		overflow-x visible
-#boton-agregar-usuario,#boton-auditar-usuario,#boton-agregar-tarifa,#boton-form-agregar-tarifa,#boton-agregar-mensualidad,#boton-form-agregar-mensualidad,#boton-agregar-backup,#boton-form-agregar-backup,#boton-form-impresion,#boton-enviar-usuario,#boton-auditar-registros
+#boton-agregar-usuario,#boton-auditar-usuario,#boton-agregar-tarifa,#boton-form-agregar-tarifa,#boton-agregar-mensualidad,#boton-form-agregar-mensualidad,#boton-agregar-backup,#boton-form-agregar-backup,#boton-form-impresion,#boton-enviar-usuario,#boton-auditar-registros,#boton_agregar_arqueo
 	font-weight bold
 	background #FFC700
 	color white
@@ -431,6 +455,8 @@ body
 #tabla-tarifas,#tabla-mensualidades,#tabla-backup
 	thead
 		color white
+#panel_arqueo
+	display none
 	
 @media screen and (max-width 768px)
 	#navbar_parking
@@ -899,6 +925,7 @@ body
 		background-color rgba(black,.7)
 		margin-top 1px
 		border 2px solid #FFD400
+		
 	#boton-ver-carros
 		margin-bottom 20px
 	// #inputs-text-cajero
@@ -930,6 +957,13 @@ body
 		margin-bottom 0
 	#boton-agregar-usuario
 		margin-left 45px
+	#panel_arqueo
+	// background-color rgba(black,.7)
+	// border 2px solid #FFc700
+		transition all 2s;
+		margin-top 20px
+	label
+		color white
 		
 	
 
