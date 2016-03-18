@@ -210,10 +210,10 @@ body
 		color white	
 
 	
-/////////////////////////////////////////////////
-//											 ///																		
-//			    CAJERO.HTML					///
-//											///				
+///////////////////////////////////////////////////
+//											   ///																		
+//			    CAJERO.HTML					  ///
+//											 ///				
 ///////////////////////////////////////////////
 #botones_caja
 	position absolute
@@ -438,13 +438,13 @@ body
 	border 2px solid #FFD400
 	margin-bottom 10px
 	padding-right:0px
-#panel_auditar_registro,#panel_auditar_ingresos
+#panel_auditar_registro,#panel_auditar_ingresos,#panel_xpress
 	background-color rgba(black,.7)
 	padding-top 20px
 	border 2px solid #FFD400
 	margin-bottom 10px
 	padding-right:0px
-#panel_auditar_ingresos
+#panel_auditar_ingresos,#panel_xpress
 	padding-bottom 10px
 	label
 		color white
@@ -467,6 +467,11 @@ body
 		color white
 #panel_arqueo
 	display none
+
+// EXPRESS
+#graficos_xpress
+	border 1px dashed red
+	height 50%
 	
 @media screen and (max-width 768px)
 	#navbar_parking
@@ -980,6 +985,7 @@ body
 		label
 			color white
 	#panel_auditar_ingresos
+		padding-bottom 20px
 		#option-auditar-ingresos
 			margin-left 80px
 	#boton-auditar-registros

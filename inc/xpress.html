@@ -1,0 +1,49 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/buttons.css">
+	<link rel="stylesheet" href="../css/estilo.css">
+	<link rel="stylesheet" href="../css/animate.css">
+	<script src="../js/jquery-1.11.2.js"></script>
+	<script src="../js/jquery-ui.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<title>Auditar Registros | Parking System</title>
+<body id="cuerpo-auditar-registros" class="bg">
+<header>
+	<div id="navbar_parking" class="navbar">
+		<a class="navbar-brand" href="../inc/panel.html"><img src="../img/acer_logo.png" alt=""></a>
+		<a id="boton-back" style="" href="../inc/auditoria.html" target=""> Volver <span class="glyphicon glyphicon-arrow-left "></span></a>		
+	</div>
+</header>
+	<div class="container">
+		<div id="panel_xpress"class="row">
+			<h3 style="margin-top:10px;margin-bottom:30px" ><span class="label label-default" style="border-radius:0px">Informes Xpress</span></h3>
+			<form id="form-xpress" action="" method="POST" class="form-inline" role="form">	
+				<div class="form-group col-lg-2">
+					<select name="" id="option-xpress" class="form-control">
+						<option value='' disabled selected style='display:none;'>Escoja Informe</option>
+						<option value="">Informe rápido de gastos</option>
+						<option value="">Informe rápido de ingresos netos</option>
+						<option value="">Informe rápido de registros</option>
+						<option value="">Promedio de ingresos mensuales</option>
+					</select>
+				</div>					
+			</form>
+		</div>
+		<div id="graficos_xpress" class="row">			
+
+		</div>
+	</div>
+<footer style="margin-top:40px">
+	<nav id="navbar_footer" class="navbar navbar-default navbar-fixed-bottom">
+		<div class="container-fluid">			
+			<a style="float:right;color:white" href="http://versatia.net" class="navbar-brand" target="_blank"><span class="helper-block ">Versatia.net</span></a>
+							
+		</div>
+	</nav>	
+</footer>
+
+</body>
+</html>
