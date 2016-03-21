@@ -142,16 +142,29 @@
 					</div>
 				</div>
 			
-			<div class="form-group col-lg-9 ">
+			<div class="form-group col-lg-6 ">
 				<label for="nombres-usuarios" class="control-label col-md-2 disabled">Nombres:</label>
 				<div class="col-md-10">
-					<input type="text" class="form-control" id="nombres-usuarios" data-id="solotexto">
+					<input type="text" class="form-control" id="primernombre-usuario" data-id="solotexto">
 				</div>
 			</div>
-			<div class="form-group col-lg-9 ">
+			<div class="form-group col-lg-6 ">
 				<label for="apellidos-usuarios" class="control-label col-md-2 disabled">Apellidos:</label>
 				<div class="col-md-10">
-					<input type="text" class="form-control" id="apellidos-usuario" data-id="solotexto">
+					<input type="text" class="form-control" id="segundonombre-usuario" data-id="solotexto">
+				</div>
+			</div>
+
+			<div class="form-group col-lg-6 ">
+				<label for="nombres-usuarios" class="control-label col-md-2 disabled">Nombres:</label>
+				<div class="col-md-10">
+					<input type="text" class="form-control" id="primerapellido-usuarios" data-id="solotexto">
+				</div>
+			</div>
+			<div class="form-group col-lg-6 ">
+				<label for="apellidos-usuarios" class="control-label col-md-2 disabled">Apellidos:</label>
+				<div class="col-md-10">
+					<input type="text" class="form-control" id="segundoapellido-usuario" data-id="solotexto">
 				</div>
 			</div>
 
