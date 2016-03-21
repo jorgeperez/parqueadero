@@ -1,0 +1,239 @@
+<?php include("variables.php"); ?>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link rel="stylesheet" href="../css/buttons.css">
+	<link rel="stylesheet" href="../css/estilo.css">
+	<link rel="stylesheet" href="../css/animate.css">
+	<script src="../js/jquery-1.11.2.js"></script>
+	<script src="../js/jquery-ui.js"></script>
+	<script src="../js/bootstrap.min.js"></script>
+	<script src="../js/draggabilly.pkgd.min.js"></script>
+	<script src="../js/validarformulario.js"></script>
+	<script src="../js/scripts.js"></script>
+	<title>Panel Usuarios | Parking System</title>
+</head>
+<body id="cuerpo-panel-users" class="bg">
+	<header>
+		<div id="navbar_parking" class="navbar">
+		<a class="navbar-brand" href="../inc/panel.html" ><img src="../img/acer_logo.png" alt=""></a>		
+		<a id="boton-back" style="" href="../inc/panel.html" target=""> Volver <span class="glyphicon glyphicon-arrow-left "></span></a>
+		</div>
+	</header>
+
+	<div id="cont_tabla_users" class="container" >
+		<div id="row_top" class="row">
+			<div id="buscar_usuarios"  class="input-group col-xs-8 col-lg-5">
+			<div class="input-group-addon icono_form"><span class="glyphicon glyphicon-search" </span></div>
+			<input type="text" class="form-control" id="" placeholder="Buscar">
+		</div>
+
+		</div>
+		<div id="tabla-usuarios" class="table-responsive ">			
+		
+			<table class="table table-striped table-bordered table-hover table-condensed animated bounceInDown col-sm-offset-0">
+				<tr class="success">
+					<th>Usuario</th>
+					<th>Contraseña</th>
+					<th>Rol</th>
+					<th>Nombres</th>
+					<th>Apellidos	</th>
+					<th>Identificación</th>
+					<th>Teléfono</th>
+					<th>Email</th>
+					<th>Options</th>
+				</tr>
+				<tr class="warning">
+					<td>1</td>
+					<td>Nombre 1</td>
+					<td>Username 1</td>
+					<td>Username 1</td>
+					<td>Username 1</td>
+					<td>Username 1</td>
+					<td>Username 1</td>
+					<td>Username 1</td>
+					<td>Username 1</td>
+					
+				</tr>
+				<tr class="active">
+					<td>2</td>
+					<td>Nombre 2</td>
+					<td>Username 2</td>
+					<td>Username 2</td>
+					<td>Username 2</td>
+					<td>Username 2</td>
+					<td>Username 2</td>
+					<td>Username 2</td>
+					<td>Username 2</td>
+					
+				</tr>
+				<tr class="danger">
+					<td>3</td>
+					<td>Nombre 3</td>
+					<td>Username 3</td>
+					<td>Username 3</td>
+					<td>Username 3</td>
+					<td>Username 3</td>
+					<td>Username 3</td>
+					<td>Username 3</td>
+					<td>Username 3</td>
+					
+				</tr>
+				<tr class="danger">
+					<td>4</td>
+					<td>Nombre 3</td>
+					<td>Username 3</td>
+					<td>Username 3</td>
+					<td>Username 3</td>
+					<td>Username 3</td>
+					<td>Username 3</td>
+					<td>Username 3</td>
+					<td>Username 3</td>
+					
+				</tr>
+				<tr class="danger">
+					<td>5</td>
+					<td>Nombre 3</td>
+					<td>Username 3</td>
+					<td>Username 3</td>
+					<td>Username 3</td>
+					<td>Username 3</td>
+					<td>Username 3</td>
+					<td>Username 3</td>
+					<td>Username 3</td>
+					
+				</tr>
+			</table>
+		</div>
+			<div id="agregar-usuario" class="col-xs-offset-9 col-sm-offset-9 col-md-offset-10 col-lg-offset-10">
+			 <button id="boton-agregar-usuario" class="button button-caution ">Agregar</button>
+			</div>			
+
+		<!-- col-md-8 col-md-offset-2 col-lg-10 col-lg-offset-2 -->
+<div class="clearfix"></div>
+		<div class="row">
+
+			<form style="margin-top:0" id="form-agregar-usuario" action="" class="form-horizontal hidden-xs hidden-sm hidden-md hidden-lg ">
+
+			<div class="form-group" id="boton_cerrar_usuarios">
+				<button id="button-cancelar" class="button button-caution button-small">
+				<span class="glyphicon glyphicon-remove col-lg-oofset-4" aria-hidden="true"></span> </button>
+
+			</div>
+			<div class="form-group col-lg-9 ">
+				<label for="identificacion-usuarios" class="control-label col-md-2 disabled">Cédula:</label>
+				<div class="col-md-10">
+					<input type="text" class="form-control" id="cedula" data-id="solonumeros">
+				</div>
+			</div>
+
+			<div class="form-group col-lg-9 ">
+				<label for="nombre-usuario" class="control-label col-md-2">Usuario:</label>
+				<div class="col-md-10">
+					<input type="text" class="form-control" id="usuario" data-id="solotexto">
+				</div>
+			</div>
+			<div class="form-group col-lg-9 ">
+					<label for="contraseña-usuario" class="control-label col-md-2 disabled">Password:</label>
+					<div class="col-md-10">
+						<input type="password" class="form-control" id="password-usuario">
+					</div>
+				</div>
+			
+			<div class="form-group col-lg-4 ">
+				<label for="nombres-usuarios" class="control-label col-md-2 disabled">Nombres </label>
+				<div class="col-md-10">
+					<input type="text" class="form-control" id="primernombre-usuario" data-id="solotexto">
+				</div>
+			</div>
+			<div class="form-group col-lg-4 ">
+				<div class="col-md-10">
+					<input type="text" class="form-control" id="segundonombre-usuario" data-id="solotexto">
+				</div>
+			</div>
+
+			<div class="form-group col-lg-4 ">
+				<label for="nombres-usuarios" class="control-label col-md-2 disabled">Apellidos </label>
+				<div class="col-md-10">
+					<input type="text" class="form-control" id="primerapellido-usuarios" data-id="solotexto">
+				</div>
+			</div>
+			<div class="form-group col-lg-4 ">
+							<div class="col-md-10">
+					<input type="text" class="form-control" id="segundoapellido-usuario" data-id="solotexto">
+				</div>
+			</div>
+
+			<div class="form-group col-lg-9 ">
+				<label for="telefono-usuarios" class="control-label col-md-2 disabled">Teléfono:</label>
+				<div class="col-md-10">
+					<input type="text" class="form-control" id="telefono-usuario" data-id="solonumeros">
+				</div>
+			</div>
+			<div class="form-group col-lg-9 ">
+				<label for="email-usuarios" class="control-label col-md-2 disabled">Email:</label>
+				<div class="col-md-10">
+					<input type="email" class="form-control" id="email-usuario">
+				</div>
+			</div>
+			<div class="form-group col-lg-9 ">	
+			<label for="estado-usuario" class="control-label col-md-2 disabled">Rol:</label>	<div class="col-md-10">	
+				<select name="" id="option" class="form-control">
+					<option value='' disabled selected style='display:none;'>Tipo</option>
+					<option value="">Cajero</option>
+					<option value="">Administrador</option>
+				</select>
+			</div>
+			</div>
+			<div class="form-group col-lg-9 ">
+				<label for="estado-usuarios" class="control-label col-xs-1 col-md-2">Activo:</label>
+				<div class="col-xs-3 col-sm-1 col-md-1 col-lg-1">
+					<input type="checkbox" class="form-control col-xs-4" id="estado-usuarios" value="">
+				</div>
+			</div>	
+
+			<div  style="margin-bottom:70px; margin-left:10px" class="form-group">
+				<div class="col-md-8 col-md-offset-2 col-lg-offset-4">
+					<a href="#"><button id="boton-enviar-usuario" role"button" class="button button-caution">Enviar</button></a>
+				</div>
+			</div>
+		</form>
+			
+		</div>
+	
+	</div>
+
+	<footer>
+		<nav id="navbar_footer" class="navbar navbar-default navbar-fixed-bottom">
+		<div class="container-fluid">			
+			<a style="float:right;color:white" href="http://versatia.net" class="navbar-brand" target="_blank"><span class="helper-block ">Versatia.net</span></a>						
+		</div>
+		</nav>	
+	</footer>
+
+<script>
+
+	$( "#boton-agregar-usuario" ).click(function() {
+	$("#form-agregar-usuario").removeClass('hidden-xs hidden-sm hidden-md hidden-lg');
+	$("#boton-agregar-usuario").addClass('hidden-xs hidden-sm hidden-md hidden-lg');
+	$("#buscar_usuarios").addClass('hidden-xs hidden-sm hidden-md hidden-lg'); 
+  	$('#form-agregar-usuario').addClass('col-md-8 col-md-offset-2 col-lg-10 col-lg-offset-2 animated bounceInDown');
+    $("#tabla-usuarios").removeClass('col-lg-12');
+  $("#tabla-usuarios").addClass('hidden-xs hidden-sm hidden-md hidden-lg');
+
+});
+// 	$( "#boton_cerrar_usuarios" ).click(function() {
+// 	$("#form-agregar-usuario").removeClass('hidden-xs hidden-sm hidden-md hidden-lg');
+// 	$("#boton-agregar-usuario").addClass('hidden-xs hidden-sm hidden-md hidden-lg');
+// 	$("#buscar_usuarios").addClass('hidden-xs hidden-sm hidden-md hidden-lg'); 
+//   	$('#form-agregar-usuario').addClass('col-md-8 col-md-offset-2 col-lg-10 col-lg-offset-2 animated bounceInDown');
+//     $("#tabla-usuarios").removeClass('col-lg-12');
+//   $("#tabla-usuarios").addClass('hidden-xs hidden-sm hidden-md hidden-lg');
+
+// });
+
+</script>
+</body>
+</html>
