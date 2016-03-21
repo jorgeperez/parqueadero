@@ -1,3 +1,8 @@
+<?php
+/*require ('include/db_conexion.php');*/
+include_once ('include/db_conexion.php');
+?>
+
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
@@ -29,7 +34,7 @@
 		    <div class="col-xs-offset-1 col-sm-10 col-sm-offset-1 col-md-10 col-md-offset-1">
 		    	<div class="input-group ">
 		    		<div class="hidden-xs input-group-addon icono_form"><span class="glyphicon glyphicon-lock" </span></div>
-		      		<input type="password" class="form-control" id="contraseña" placeholder="Contraseña" onfocus="this.placeholder=''" onblur="this.placeholder='Contraseña'">
+		      		<input type="password" class="form-control" id="contraseña" placeholder="Contraseña" onfocus="this.placeholder=''" onblur="this.placeholder='Contraseña' ">
 		    	</div>
 		    </div>
 		  </div>
@@ -46,5 +51,6 @@
 	<script src="js/jquery-1.11.2.js"></script>
 	<script src="js/jquery-ui.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	
 	</body>
 </html>
